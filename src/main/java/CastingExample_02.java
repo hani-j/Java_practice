@@ -11,5 +11,8 @@ public class CastingExample_02 {
         double result = intValue2 + doubleValue;
         System.out.println(result);
         System.out.println(intValue2);
+//      byte : 1byte
+//      int : 4byte
+//      double : 8byte
     }
 }
