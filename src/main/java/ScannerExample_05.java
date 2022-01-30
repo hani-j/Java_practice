@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// java.util 안에 Scanner 라는 class를 import하겠다
 
 public class ScannerExample_05 {
     public static void main(String[] args) {
@@ -6,6 +7,7 @@ public class ScannerExample_05 {
         int result;
 
         Scanner s = new Scanner(System.in);
+        // 메모리에 무언가를 만들어라
         a = s.nextInt(); // 키보드로부터 정수 읽음
         b = s.nextInt();
 
