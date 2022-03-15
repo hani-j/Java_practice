@@ -16,15 +16,16 @@ public class InheritanceExample {
         send(obj2, "stickman@hahaha.com");
     }
 
-    public static void send(EmailSender obj, String recipient) { //주는 쪽 받는 쪽 타입 일치
-        obj.sendMessage(recipient);
-    }
-
-    public static void send(SMSSender obj, String recipient) {
-        obj.sendMessage(recipient);
-    }
+//    public static void send(EmailSender obj, String recipient) { //주는 쪽 받는 쪽 타입 일치
+//        obj.sendMessage(recipient);
+//    }
+//
+//    public static void send(SMSSender obj, String recipient) {
+//        obj.sendMessage(recipient);
+//    }
 
     public static void send(MessageSender obj, String recipient) {
+        // 자바 컴파일러는 객체가 아니라 변수의 타입만 가지고 그 메서드가 있는지 없는지 체크
         obj.sendMessage(recipient);
     }
 }

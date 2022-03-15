@@ -3,7 +3,7 @@ package ClassEx22_57;
 public class SMSSender extends MessageSender{
     String returnPhoneNo;
     String message;
-    SMSSender(String title, String senderName, String returnPhoneNo, String massage) {
+    SMSSender(String title, String senderName, String returnPhoneNo, String message) {
         super(title, senderName);
         this.returnPhoneNo = returnPhoneNo;
         this.message = message;
