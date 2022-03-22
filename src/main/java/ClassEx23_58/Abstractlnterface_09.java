@@ -1,1 +1,0 @@
-class AbstractLnterface_09

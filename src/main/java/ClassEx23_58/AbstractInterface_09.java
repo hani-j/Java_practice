@@ -1,0 +1,65 @@
+package ClassEx23_58;
+
+abstract class PersonalNumberStorage{
+
+    public abstract void addPersonalInfo(String name,String perNum);
+    public abstract String searchName(String perNum);
+}
+
+class PersonalNumInfo{
+    String name;
+    String number;
+
+    PersonalNumInfo(String name,String number){
+        this.name=name;
+        this.number=number;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    String getNumber() {
+        return number;
+    }
+}
+
+class PersonalNumberStorageImpl extends PersonalNumberStorage{
+    PersonalNumInfo[] perArr;
+    int numOfPerInfo;
+
+    public PersonalNumberStorageImpl(int sz){
+        perArr=new PersonalNumInfo[sz];
+        numOfPerInfo=0;
+    }
+
+    public void addPersonalInfo(String name,String perNum) { // 왜 에러가 날까 오버라이딩은 선언 생략
+        perArr[numOfPerInfo]=new PersonalNumInfo(name,perNum);
+        numOfPerInfo++;
+    }
+
+    public String searchName(String perNum) { // 주민번호 찾아내는 방법
+        for(int i=0;i<numOfPerInfo;i++) {
+            //if(perNum.equals(perArr[i].getNumber()))
+            if(perNum.compareTo(perArr[i].getNumber())==0) //일치할 때 반환하는 값 0
+
+                return perArr[i].getName();
+        }
+        //return perNum;
+        return null;
+    }
+}
+
+public class AbstractInterface_09{
+
+    public static void main(String[] args) { // 추상클래스는 객체생성 안됨
+        PersonalNumberStorageImpl storage=new PersonalNumberStorageImpl(100);
+        storage.addPersonalInfo("홍길동","950000-1122333");
+        storage.addPersonalInfo("홍길무","970000-1122334");
+
+        System.out.println(storage.searchName("950000-1122333"));
+        System.out.println(storage.searchName("970000-1122334"));
+
+    }
+//
+}
