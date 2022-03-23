@@ -38,7 +38,7 @@ class Audio extends Product2 {
 		super(50);
 	}
 
-	public String toSting() {
+	public String toString() {
 		return "Audio";
 	}
 }
@@ -57,7 +57,7 @@ class Buyer2 {
 		money -= p.price;
 		bonusPoint += p.bonusPoint;
 		item[i] = p;
-		i = i+1;
+		i++;
 		System.out.println(p + "을/를 구입");
 	}
 
