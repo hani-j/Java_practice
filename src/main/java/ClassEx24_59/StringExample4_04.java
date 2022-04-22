@@ -1,3 +1,5 @@
+package ClassEx24_59;
+
 public class StringExample4_04 {
 
 	public static void main(String[] args) {
