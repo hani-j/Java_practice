@@ -1,10 +1,10 @@
-package com.fastcampus.jpa.bookmanager;
+package com.fastcampus.jpa.bookmanager2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BookmanagerApplicationTests {
+class Bookmanager2ApplicationTests {
 
     @Test
     void contextLoads() {

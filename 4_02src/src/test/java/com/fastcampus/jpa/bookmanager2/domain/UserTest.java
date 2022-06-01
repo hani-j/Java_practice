@@ -1,21 +1,19 @@
-package com.fastcampus.jpa.bookmanager.domain;
+package com.fastcampus.jpa.bookmanager2.domain;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class UserTest {
     @Test
     void test() {
-        Users user = new Users();
+        User user = new User();
         user.setEmail("gkdms4248@mail.com");
         user.setName("haeun");
 
         // NonNull 사용한 것들
-        Users user1 = new Users("gg@gg.gg", "gg");
+        User user1 = new User("gg@gg.gg", "gg");
 
         // Builder
-        Users user2 = Users.builder()
+        User user2 = User.builder()
                 .name("martin")
                 .email("martin@fastcampus.com")
                 .build();

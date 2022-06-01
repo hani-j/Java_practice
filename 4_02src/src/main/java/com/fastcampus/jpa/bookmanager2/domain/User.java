@@ -1,4 +1,4 @@
-package com.fastcampus.jpa.bookmanager.domain;
+package com.fastcampus.jpa.bookmanager2.domain;
 
 import lombok.*;
 
@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 @Builder
 @Entity
-public class Users {
+public class User {
 
     @Id // primary key 값
     @GeneratedValue // 자동으로 증가

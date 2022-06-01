@@ -1,4 +1,4 @@
-package com.fastcampus.jpa.bookmanager.controller;
+package com.fastcampus.jpa.bookmanager2.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
