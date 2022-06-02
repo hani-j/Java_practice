@@ -6,4 +6,8 @@ spring:
     show-sql: true
     properties:
       hibernate:
+<<<<<<< HEAD
         format_sql: true
+=======
+        format_sql: ture
+>>>>>>> cd78f5f496fab411aa19c39ab26fff7807b3d6ed
