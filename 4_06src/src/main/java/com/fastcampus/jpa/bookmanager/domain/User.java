@@ -22,7 +22,7 @@ import java.util.List;
 public class User extends BaseEntity {
 
     @Id // primary key 값
-    @GeneratedValue // 자동으로 증가
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동으로 증가
     private Long id;
 
     @NonNull
