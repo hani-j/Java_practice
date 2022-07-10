@@ -1,0 +1,27 @@
+spring:
+#  autoconfigure:
+#    exclude:
+#      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  h2:
+    console:
+      enabled: true
+  jpa:
+    #defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        hbm2ddl.import_files_sql_extractor: org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor
+        format_sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: create #-drop
+#    database: sql_server
+  datasource:
+    url: jdbc:mysql://localhost:3306/book_manager
+    username: root
+    password: asdf1234!
+    initialization-mode: always
+  main:
+    allow-bean-definition-overriding: false
+#    driver-class-name: com.mysql.cj.jdbc.Driver
