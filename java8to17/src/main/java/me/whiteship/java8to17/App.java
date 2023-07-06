@@ -10,7 +10,7 @@ public class App {
         // static 메소드 참조
         UnaryOperator<String> hi = Greeting::hi;
 
-        // Instance 메소드 참조
+        // 특정 객체의 Instance 메소드 참조
         Greeting greeting = new Greeting();
         UnaryOperator<String> hello = greeting::hello;
         System.out.println(hello.apply("keesun"));
